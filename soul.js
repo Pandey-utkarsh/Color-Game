@@ -38,68 +38,7 @@ let t4 = document.querySelector("#d");
 let t5 = document.querySelector("#e");
 let t6 = document.querySelector("#f");
 var i,j, x, y, z, n=6, truecal, ans;
-var p1=1, p2=1, p3=1, p4=1, p5=1, p6=1;
 let tilearr = [t1,t2,t3,t4,t5,t6];
-t1.addEventListener('mouseover', ()=>{
-    if(p1){
-        t1.style.width = '180px';
-        t1.style.height = '180px';
-    }
-})
-t1.addEventListener('mouseout', ()=>{
-    t1.style.width = '170px';
-    t1.style.height = '170px';
-})
-t2.addEventListener('mouseover', ()=>{
-    if(p2){
-        t2.style.width = '180px';
-        t2.style.height = '180px';
-    }
-})
-t2.addEventListener('mouseout', ()=>{
-    t2.style.width = '170px';
-    t2.style.height = '170px';
-})
-t3.addEventListener('mouseover', ()=>{
-    if(p3){
-        t3.style.width = '180px';
-        t3.style.height = '180px';
-    }
-})
-t3.addEventListener('mouseout', ()=>{
-    t3.style.width = '170px';
-    t3.style.height = '170px';
-})
-t4.addEventListener('mouseover', ()=>{
-    if(p4){
-        t4.style.width = '180px';
-        t4.style.height = '180px';
-    }
-})
-t4.addEventListener('mouseout', ()=>{
-    t4.style.width = '170px';
-    t4.style.height = '170px';
-})
-t5.addEventListener('mouseover', ()=>{
-    if(p5){
-        t5.style.width = '180px';
-        t5.style.height = '180px';
-    }
-})
-t5.addEventListener('mouseout', ()=>{
-    t5.style.width = '170px';
-    t5.style.height = '170px';
-})
-t6.addEventListener('mouseover', ()=>{
-    if(p6){
-        t6.style.width = '180px';
-        t6.style.height = '180px';
-    }
-})
-t6.addEventListener('mouseout', ()=>{
-    t6.style.width = '170px';
-    t6.style.height = '170px';
-})
 np.addEventListener('click', ()=>{
     truecal = newplay();
 })
@@ -218,7 +157,6 @@ function tile1(ans){
         topog.style.backgroundColor = "rgb("+ans.x+","+ans.y+","+ans.z+")";
         promp.innerText = "Correct!!";
         np.innerText = "PLAY AGAIN";
-        p1=1, p2=1, p3=1, p4=1, p5=1, p6=1;
         for(i=0;i<ans.n;i++){
             tilearr[i].style.background = "rgb("+ans.x+","+ans.y+","+ans.z+")";
         }
@@ -226,7 +164,6 @@ function tile1(ans){
     else{
         t1.style.background = "rgb(59,58,56)";
         promp.innerText = "Try Again!";
-        p1=0;
     }
     return 0;
 }
@@ -235,7 +172,6 @@ function tile2(ans){
         topog.style.backgroundColor = "rgb("+ans.x+","+ans.y+","+ans.z+")";
         promp.innerText = "Correct!!";
         np.innerText = "PLAY AGAIN";
-        p1=1, p2=1, p3=1, p4=1, p5=1, p6=1;
         for(i=0;i<ans.n;i++){
             tilearr[i].style.background = "rgb("+ans.x+","+ans.y+","+ans.z+")";
         }
@@ -243,7 +179,6 @@ function tile2(ans){
     else{
         t2.style.background = "rgb(59,58,56)";
         promp.innerText = "Try Again!";
-        p2=0;
     }
     return 0;
 }
@@ -252,7 +187,6 @@ function tile3(ans){
         topog.style.backgroundColor = "rgb("+ans.x+","+ans.y+","+ans.z+")";
         promp.innerText = "Correct!!";
         np.innerText = "PLAY AGAIN";
-        p1=1, p2=1, p3=1, p4=1, p5=1, p6=1;
         for(i=0;i<ans.n;i++){
             tilearr[i].style.background = "rgb("+ans.x+","+ans.y+","+ans.z+")";
         }
@@ -260,7 +194,6 @@ function tile3(ans){
     else{
         t3.style.background = "rgb(59,58,56)";
         promp.innerText = "Try Again!";
-        p3=0;
     }
     return 0;
 }
@@ -269,7 +202,6 @@ function tile4(ans){
         topog.style.backgroundColor = "rgb("+ans.x+","+ans.y+","+ans.z+")";
         promp.innerText = "Correct!!";
         np.innerText = "PLAY AGAIN";
-        p1=1, p2=1, p3=1, p4=1, p5=1, p6=1;
         for(i=0;i<ans.n;i++){
             tilearr[i].style.background = "rgb("+ans.x+","+ans.y+","+ans.z+")";
         }
@@ -277,7 +209,6 @@ function tile4(ans){
     else{
         t4.style.background = "rgb(59,58,56)";
         promp.innerText = "Try Again!";
-        p4=0;
     }
     return 0;
 }
@@ -286,7 +217,6 @@ function tile5(ans){
         topog.style.backgroundColor = "rgb("+ans.x+","+ans.y+","+ans.z+")";
         promp.innerText = "Correct!!";
         np.innerText = "PLAY AGAIN";
-        p1=1, p2=1, p3=1, p4=1, p5=1, p6=1;
         for(i=0;i<ans.n;i++){
             tilearr[i].style.background = "rgb("+ans.x+","+ans.y+","+ans.z+")";
         }
@@ -294,7 +224,6 @@ function tile5(ans){
     else{
         t5.style.background = "rgb(59,58,56)";
         promp.innerText = "Try Again!";
-        p5=0;
     }
     return 0;
 }
@@ -303,7 +232,6 @@ function tile6(ans){
         topog.style.backgroundColor = "rgb("+ans.x+","+ans.y+","+ans.z+")";
         promp.innerText = "Correct!!";
         np.innerText = "PLAY AGAIN";
-        p1=1, p2=1, p3=1, p4=1, p5=1, p6=1;
         for(i=0;i<ans.n;i++){
             tilearr[i].style.background = "rgb("+ans.x+","+ans.y+","+ans.z+")";
         }
@@ -311,7 +239,6 @@ function tile6(ans){
     else{
         t6.style.background = "rgb(59,58,56)";
         promp.innerText = "Try Again!";
-        p6=0;
     }
     return 0;
 }
